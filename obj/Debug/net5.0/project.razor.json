@@ -15629,6 +15629,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Core i7\\Desktop\\james\\Matematicas\\Views\\Home\\FMixtoM.cshtml",
+      "TargetPath": "Views\\Home\\FMixtoM.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Core i7\\Desktop\\james\\Matematicas\\Views\\Shared\\Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"

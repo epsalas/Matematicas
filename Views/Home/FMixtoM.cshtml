@@ -1,0 +1,42 @@
+@model Matematicas.Models.FMixto
+
+<main role="main">
+
+    <form asp-action="FMixtoM">
+        <div>
+            <label for="form-control">
+                Ingrese el numerador:
+            </label>
+            <input asp-for="numerador" class="form-control">
+        </div>
+
+        <div>
+            <label for="form-control">
+                Ingrese el denominador:
+            </label>
+            <input asp-for="denominador" class="form-control">
+        </div>
+        <br>
+        x
+        <br>
+        <div>
+            <label for="form-control">
+                Ingrese el numerador:
+            </label>
+            <input asp-for="numerador2" class="form-control">
+        </div>
+
+        <div>
+            <label for="form-control">
+                Ingrese el denominador:
+            </label>
+            <input asp-for="denominador2" class="form-control">
+        </div>
+        
+
+        @Html.DisplayFor(model => model.Mensaje)
+        <br>
+        <input type="submit" value="Calcular" class="btn btn-primary" /><br>
+    </form>
+    
+</main>
