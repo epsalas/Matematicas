@@ -2,7 +2,7 @@
 
 <main role="main">
 
-    <form asp-action="FMixtoM">
+    <form asp-action="FSuma">
         <div>
             <label for="form-control">
                 Ingrese el numerador:
@@ -17,7 +17,7 @@
             <input asp-for="denominador" class="form-control">
         </div>
         <br>
-        x
+        +
         <br>
         <div>
             <label for="form-control">
@@ -32,8 +32,8 @@
             </label>
             <input asp-for="denominador2" class="form-control">
         </div>
+        
         <br>
-
         @Html.DisplayFor(model => model.Mensaje)
         <br>
         <br>

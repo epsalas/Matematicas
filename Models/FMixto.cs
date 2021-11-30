@@ -17,6 +17,13 @@ namespace Matematicas.Models{
 
         public int a {get;set;}
 
+        public int b {get;set;}
+
+        public int c {get;set;}
+
+        public int fresud {get;set;}
+        public int fresun {get;set;}
+
         public int entero{get;set;}
 
         public int suma {get;set;}

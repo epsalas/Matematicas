@@ -40,3 +40,4 @@ C:\Users\Core i7\Desktop\james\Matematicas\obj\Debug\net5.0\Matematicas.pdb
 C:\Users\Core i7\Desktop\james\Matematicas\obj\Debug\net5.0\Matematicas.genruntimeconfig.cache
 C:\Users\Core i7\Desktop\james\Matematicas\obj\Debug\net5.0\Matematicas.csproj.CopyComplete
 C:\Users\Core i7\Desktop\james\Matematicas\obj\Debug\net5.0\Razor\Views\Home\FMixtoM.cshtml.g.cs
+C:\Users\Core i7\Desktop\james\Matematicas\obj\Debug\net5.0\Razor\Views\Home\FSuma.cshtml.g.cs

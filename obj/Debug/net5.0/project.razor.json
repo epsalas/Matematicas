@@ -15659,6 +15659,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Core i7\\Desktop\\james\\Matematicas\\Views\\Home\\FSuma.cshtml",
+      "TargetPath": "Views\\Home\\FSuma.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Core i7\\Desktop\\james\\Matematicas\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
