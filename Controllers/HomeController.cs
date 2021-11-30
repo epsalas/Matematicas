@@ -130,7 +130,7 @@ namespace Matematicas.Controllers
                         if(fMixto.suma == 0){
                             fMixto.Mensaje="El numero es un entero: "+fMixto.entero;
                         }else {
-                            
+
                             fMixto.Mensaje="El numero es un numero mixto: "+fMixto.entero+"  "+fMixto.suma+"/"+fMixto.denresu;
                         }
                         
@@ -147,6 +147,90 @@ namespace Matematicas.Controllers
             }
 
             return View("FSuma", fMixto);
+        }
+        public IActionResult FResta(){
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult FResta(FMixto fMixto){
+            if (ModelState.IsValid)
+            {
+                
+                if(fMixto.denominador2==0  || fMixto.denominador==0){
+                    fMixto.Mensaje = "Error al restar, el denominador no puede ser 0";
+                }else{
+                    fMixto.denresu=fMixto.denominador*fMixto.denominador2;
+                    fMixto.a= fMixto.numerador * (fMixto.denresu/fMixto.denominador);
+                    fMixto.b= fMixto.numerador2 * (fMixto.denresu/fMixto.denominador2);
+                    fMixto.c= fMixto.a - fMixto.b;
+
+                    if(fMixto.c >= fMixto.denresu ){
+                        fMixto.entero= fMixto.c/fMixto.denresu;
+                        fMixto.suma = fMixto.c - (fMixto.entero*fMixto.denresu);
+                        if(fMixto.suma == 0){
+                            fMixto.Mensaje="El numero es un entero: "+fMixto.entero;
+                        }else {
+                            
+                            fMixto.Mensaje="El numero es un numero mixto: "+fMixto.entero+"  "+fMixto.suma+"/"+fMixto.denresu;
+                        }
+                        
+                    }
+                        
+                    else{
+                        fMixto.Mensaje="El numero es una fraccion: "+fMixto.c+"/"+fMixto.denresu;
+                    }
+                }
+
+
+                
+                
+            }
+
+            return View("FResta", fMixto);
+        }
+
+        public IActionResult FDivision(){
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult FDivision(FMixto fMixto){
+            if (ModelState.IsValid)
+            {   
+                
+                
+                if(fMixto.denominador2==0  || fMixto.denominador==0){
+                    fMixto.Mensaje = "Error al dividir, el denominador no puede ser 0";
+                    
+                    
+                
+                }else{
+                    fMixto.numresu = fMixto.numerador*fMixto.denominador2;
+                    fMixto.denresu = fMixto.numerador2 *fMixto.denominador;
+                    fMixto.entero = fMixto.numresu/fMixto.denresu;
+                    fMixto.suma= fMixto.numresu -(fMixto.denresu*fMixto.entero);
+                    
+                    
+
+                    if(fMixto.numresu >= fMixto.denresu){
+                        
+                        
+                        
+                        if(fMixto.suma == 0 || fMixto.numresu == fMixto.denresu){
+                            fMixto.Mensaje = "El resultado es un numero entero: "+fMixto.entero;
+                        }else {
+                            fMixto.Mensaje = "El resultado es un numero mixto: "+fMixto.entero + "  "+fMixto.suma+ "/"+fMixto.denresu;
+                            
+                        }
+                    }else {
+                        fMixto.Mensaje = "El resultado es una fraccion: "+fMixto.numresu+"/" + fMixto.denresu;
+                    }
+                }
+                
+            }
+
+            return View("FDivision", fMixto);
         }
     }
 }
